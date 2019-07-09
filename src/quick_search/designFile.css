@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 19, 2017, 11:32:53 AM
+    Author     : Yuken4real
+*/
+/*.jfx-button:hover{
+    -fx-text-fill: red;
+}*/
+.jfx-list-cell:selected{
+    -fx-background-color: #55a0d7;
+}
+.jfx-list-cell{
+    -fx-background-insets: 0.0;
+}
+.jfx-list-cell.jfx-rippler{
+    -fx-rippler-fill: blue;
+}
+.jfx-list-cell:hover{
+    -fx-background-color: #1bd79c;
+}
+.jfx-list-view{
+    -fx-background-insets: 0;
+    -fx-cell-vertical-margin:10.0;
+    -fx-vertical-gap: 10;
+}

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import jfxtras.scene.control.ImageViewButton?>
+<?import org.controlsfx.control.CustomTextField?>
+
+<AnchorPane id="AnchorPane" fx:id="frame" prefHeight="653.0" prefWidth="774.0" style="-fx-border-width: ; -fx-border-color: #55A0D7;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quick_search.FXMLDocumentController">
+   <children>
+      <Pane prefHeight="67.0" prefWidth="775.0" style="-fx-background-color: #55a0d7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Pane layoutY="61.0" prefHeight="539.0" prefWidth="191.0" style="-fx-background-color: #55A0D7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="61.0">
+         <children>
+            <Pane prefHeight="131.0" prefWidth="191.0" style="-fx-background-color: EFEFEF;">
+               <children>
+                  <ImageView fitHeight="131.0" fitWidth="191.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@imageFile/QuickS.jpg" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <JFXButton fx:id="folderSeek" alignment="BASELINE_LEFT" graphicTextGap="8.0" layoutY="156.0" onAction="#PageSwitch" prefHeight="67.0" prefWidth="191.0" ripplerFill="#55a0d7" stylesheets="@designFile.css" text="Folder Seek" textFill="#f9f9f9">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imageFile/Untitled-2.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Zeronero Black" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="fileSeek" alignment="BASELINE_LEFT" graphicTextGap="6.0" layoutY="223.0" onAction="#PageSwitch" prefHeight="67.0" prefWidth="191.0" ripplerFill="#55a0d7" stylesheets="@designFile.css" text="File Seek" textFill="#f9f9f9">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@imageFile/newFIleS2.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Zeronero Black" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="contentSeek" alignment="BASELINE_LEFT" graphicTextGap="5.0" layoutY="289.0" onAction="#PageSwitch" prefHeight="67.0" prefWidth="191.0" ripplerFill="#55a0d7" stylesheets="@designFile.css" text="Word Seek" textFill="#f9f9f9">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@imageFile/Untitled-1_1.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Zeronero Black" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="aboutSeek" alignment="BASELINE_LEFT" graphicTextGap="17.0" layoutY="356.0" onAction="#PageSwitch" prefHeight="67.0" prefWidth="191.0" ripplerFill="#55a0d7" stylesheets="@designFile.css" text="About" textFill="#f9f9f9">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imageFile/Info_100px_3.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="0.22" contrast="-0.02" hue="-0.02" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Zeronero Black" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="190.0" layoutY="61.0" prefHeight="131.0" prefWidth="593.0" style="-fx-background-color: #DDDDDD; -fx-border-color: #4798AC;" AnchorPane.bottomAnchor="408.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="61.0">
+         <children>
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="319.0" layoutY="11.0" prefHeight="25.0" prefWidth="21.0" text="..." textFill="RED" />
+            <AnchorPane layoutX="3.0" layoutY="2.0" prefHeight="48.0" prefWidth="582.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0">
+               <children>
+                  <CustomTextField fx:id="preFileLocation" editable="false" layoutX="373.0" layoutY="14.0" prefHeight="25.0" prefWidth="183.0" promptText="Choose file location" AnchorPane.rightAnchor="10.0">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DISAPPEAR" />
+                     </cursor>
+                  </CustomTextField>
+                  <ImageViewButton fx:id="changeBut" fitHeight="22.0" fitWidth="24.0" layoutX="341.0" layoutY="16.0" onMouseClicked="#choose" preserveRatio="true" AnchorPane.rightAnchor="215.0">
+                     <image>
+                        <Image url="@imageFile/Enter_100px_1.png" />
+                     </image>
+                  </ImageViewButton>
+                  <Label alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="12.0" prefHeight="25.0" prefWidth="56.0" text="Filter :" textFill="BLUE">
+                     <font>
+                        <Font name="Trajan" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="H_RESIZE" />
+                     </cursor>
+                  </Label>
+                  <ComboBox fx:id="combo" layoutX="69.0" layoutY="14.0" onAction="#comboSelection" prefHeight="25.0" prefWidth="208.0" />
+               </children>
+            </AnchorPane>
+            <BorderPane layoutX="428.0" layoutY="60.0" prefHeight="39.0" prefWidth="150.0" AnchorPane.rightAnchor="10.0">
+               <left>
+                  <Button fx:id="resetBut" mnemonicParsing="false" onAction="#Reset" prefHeight="29.0" prefWidth="70.0" stylesheets="@designFile.css" text="Reset" BorderPane.alignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageFile/Restart_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="Lucida Sans Regular" size="13.0" />
+                     </font>
+                  </Button>
+               </left>
+               <right>
+                  <Button fx:id="stopBut" mnemonicParsing="false" onAction="#Cancel" prefHeight="29.0" prefWidth="70.0" stylesheets="@designFile.css" text="Cancel" BorderPane.alignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageFile/Cancel_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="2.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </right>
+            </BorderPane>
+            <Label fx:id="note" layoutX="11.0" layoutY="80.0" prefHeight="17.0" prefWidth="241.0" textFill="RED" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font name="Verdana Italic" size="12.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="proBar" layoutX="8.0" layoutY="105.0" prefHeight="18.0" prefWidth="593.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Pane layoutX="-13.0" layoutY="59.0" prefHeight="3.0" prefWidth="598.0" style="-fx-background-color: #BDAA05;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Pane layoutX="420.0" layoutY="46.0" prefHeight="17.0" prefWidth="164.0" style="-fx-background-color: DDDDDD;" AnchorPane.rightAnchor="0.0" />
+            <Pane layoutX="418.0" layoutY="60.0" prefHeight="39.0" prefWidth="3.0" style="-fx-background-color: #BDAA05;" AnchorPane.rightAnchor="164.0" />
+            <Pane layoutX="449.0" layoutY="97.0" prefHeight="3.0" prefWidth="166.0" style="-fx-background-color: #BDAA05;" AnchorPane.rightAnchor="0.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="folderPane" layoutX="190.0" layoutY="191.0" prefHeight="415.0" prefWidth="582.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="191.0">
+         <children>
+            <BorderPane layoutX="156.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="188.0">
+               <center>
+                  <ImageView fitHeight="218.0" fitWidth="255.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@imageFile/images(12).jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <bottom>
+                  <AnchorPane prefHeight="109.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <CustomTextField fx:id="folderField" layoutX="7.0" layoutY="20.0" prefHeight="26.0" prefWidth="238.0" promptText="Insert word" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </CustomTextField>
+                        <Button fx:id="folderBut" alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="63.0" mnemonicParsing="false" onAction="#Checker" prefHeight="55.0" prefWidth="96.0" stylesheets="@designFile.css" text="SEARCH" textFill="#d70000" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="76.0">
+                           <font>
+                              <Font name="Zeronero Black" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </bottom>
+            </BorderPane>
+         </children></AnchorPane>
+      <AnchorPane fx:id="filePane" layoutX="191.0" layoutY="191.0" prefHeight="425.0" prefWidth="601.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="191.0">
+         <children>
+            <BorderPane layoutX="156.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="188.0">
+               <center>
+                  <ImageView fitHeight="218.0" fitWidth="255.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@imageFile/images(32).jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <bottom>
+                  <AnchorPane prefHeight="109.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <CustomTextField fx:id="fileField" layoutX="7.0" layoutY="20.0" prefHeight="26.0" prefWidth="238.0" promptText="Insert word" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </CustomTextField>
+                        <Button fx:id="fileBut" alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="63.0" mnemonicParsing="false" onAction="#Checker" prefHeight="55.0" prefWidth="96.0" stylesheets="@designFile.css" text="SEARCH" textFill="#d70000" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="76.0">
+                           <font>
+                              <Font name="Zeronero Black" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="contentPane" layoutX="192.0" layoutY="191.0" prefHeight="425.0" prefWidth="601.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="191.0">
+         <children>
+            <BorderPane layoutX="156.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="188.0">
+               <center>
+                  <ImageView fitHeight="218.0" fitWidth="255.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@imageFile/images(34).jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <bottom>
+                  <AnchorPane prefHeight="109.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <CustomTextField fx:id="contentField" layoutX="7.0" layoutY="20.0" prefHeight="26.0" prefWidth="238.0" promptText="Insert word" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </CustomTextField>
+                        <Button fx:id="contentBut" alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="63.0" mnemonicParsing="false" onAction="#Checker" prefHeight="55.0" prefWidth="96.0" text="SEARCH" textFill="#d70000" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="76.0">
+                           <font>
+                              <Font name="Zeronero Black" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="listPane" prefHeight="424.0" prefWidth="593.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="191.0">
+         <children>
+            <JFXListView fx:id="displayShow" prefHeight="424.0" prefWidth="575.0" stylesheets="@designFile.css" verticalGap="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect></JFXListView>
+         </children>
+      </AnchorPane>
+    <AnchorPane fx:id="aboutPane" layoutX="190.0" layoutY="63.0" minHeight="0.0" minWidth="0.0" prefHeight="539.0" prefWidth="585.0" style="-fx-background-color: #55a0d7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="63.0">
+         <children>
+            <AnchorPane layoutY="-3.0" prefHeight="378.0" prefWidth="584.0" style="-fx-background-color: #55a0d7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="344.0" fitWidth="584.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@imageFile/qsFlyerR.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="340.0" prefHeight="250.0" prefWidth="584.0" style="-fx-background-color: #55a0d7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="340.0">
+               <children>
+                  <TabPane layoutX="1.0" prefHeight="218.0" prefWidth="582.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="Description">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TextArea editable="false" prefHeight="190.0" prefWidth="584.0" text="   Welcome to Quick-Search 1.0  &#10;&#10;                 Quick-Search is a desktop application whose function is to help search&#10;  for the location of a particular word, be it a file name, folder name or if present&#10;  in  the content of a document in your computer.&#10;            You start by typing in the specific word and choosing a location for faster &#10; result or better still, search the whole computer. The most interesting function is &#10; that quick-search is capable of opening a readable file and scanning through it&#10; content to check if the inserted word is present.&#10;&#10;  NOTE: Following are the supported file type for quick search application.&#10;&#10;     1. PDFs &#10;     2. Microsoft word documents &#10;     3.Text documents" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Georgia" size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Information">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TextArea editable="false" prefHeight="190.0" prefWidth="584.0" text="Name: QUICK-SEARCH&#10;&#10;Version: 1.0&#10;&#10;Author: Yuken Automation&#10;&#10;Email: oladapoyuken@yahoo.com&#10;&#10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Georgia" size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

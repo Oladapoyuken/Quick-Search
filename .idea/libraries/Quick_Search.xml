@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Quick_Search">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Quick_Search.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
